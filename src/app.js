@@ -1,5 +1,5 @@
-const express = require("express");
-const fibRoute = require("./fibRoute");
+import express from "express";
+import fibRoute from "./fibRoute";
 
 const app = express();
 const port = 3000;
@@ -14,4 +14,4 @@ app.listen(port, () => {
   return console.log(`Express is listening at http://localhost:${port}`);
 });
 
-module.exports = app;
+export default app;
